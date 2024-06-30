@@ -1,5 +1,8 @@
 {
   "devDependencies": {
+    "less": "^4.2.0",
+    "sass": "^1.77.6",
+    "stylus": "^0.63.0",
     "vitepress": "^1.2.3"
   },
   "scripts": {

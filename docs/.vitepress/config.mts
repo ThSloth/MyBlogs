@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "也可以叫我陈同学",
+  title: "无聊学习",
   description: "take down (in writing)",
   markdown: {
     image: {
@@ -14,9 +14,15 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     siteTitle: "无聊学习",
-    logo: "./yao.jpg",
+    logo: "/yao.jpg",
     search: {
       provider: 'local'
+    },
+    outline: { label: '目录导航' },
+    docFooter: { prev: '上一页', next: '下一页' },
+    footer: {
+      message: '本站收录内容源自互联网，不对其网站内容或交易负责。如有内容侵犯权益，请联系站长删除相关内容！',
+      copyright: 'Copyright © 2024 也可以叫我陈同学',
     },
     nav: [
       { text: '爬虫工具库', 

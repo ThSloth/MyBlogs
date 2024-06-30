@@ -7,7 +7,7 @@ hero:
   text: "take down (in writing)"
   tagline: My great project tagline
   image:
-    src: ./yao.jpg
+    src: /yao.jpg
     alt: yao
   actions:
     - theme: brand
@@ -26,3 +26,10 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+<style>
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+
+}
+</style>
