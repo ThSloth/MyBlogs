@@ -110,7 +110,7 @@ export default defineConfig({
           text: '经验积累',
           collapsed: false,
           items: [
-            { text: '本地搭建', link: '/selfMedia/vitepress/11' },
+            { text: '首页美化', link: '/selfMedia/vitepress/31' },
             { text: 'GitHub部署', link: '/selfMedia/vitepress/12' }
           ]
         },
