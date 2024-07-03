@@ -7,8 +7,8 @@ hero:
   text: "take down (in writing)"
   tagline: My great project tagline
   image:
-    src: /yao.jpg
-    alt: yao
+    src: /transparentYao.png
+    alt: transparentYao
   actions:
     - theme: brand
       text: Markdown Examples
