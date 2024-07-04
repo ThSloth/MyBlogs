@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import Icons from 'vite-plugin-icons';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -11,6 +12,11 @@ export default defineConfig({
     },
     lineNumbers: true
   },
+  head: [
+    // 在这里添加你的 CSS 文件链接
+    ['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/c/font_4610072_werb8kqtkg.css' }]
+  ],
+  cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     siteTitle: "无聊学习",

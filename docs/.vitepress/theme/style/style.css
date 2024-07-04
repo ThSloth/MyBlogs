@@ -12,12 +12,57 @@
   @charset "UTF-8";
 
   :root {
-      --vp-home-hero-name-color: transparent;
-      --vp-home-hero-name-background: linear-gradient(120deg, #bd34fe, #41d1ff);
+      /* --vp-home-hero-name-color: transparent;
+      --vp-home-hero-name-background: linear-gradient(120deg, #bd34fe, #41d1ff); */
       --vp-home-hero-image-background-image: -webkit-linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
-      --vp-home-hero-image-filter: blur(45px);
       --vp-layout-max-width: 1450px;
-      --vp-code-line-height: 2.2em
+      --vp-code-line-height: 2.2em;
+
+        /* brand按钮 */
+        --vp-button-brand-border: #D939CD;
+        --vp-button-brand-text: #D939CD;
+        --vp-button-brand-bg: transparent;
+        --vp-button-brand-hover-border: #D939CD;
+        --vp-button-brand-hover-text: #ffffff;
+        --vp-button-brand-hover-bg: #D939CD;
+        --vp-button-brand-active-border: #D939CD;
+
+        --vp-button-alt-border: #47caff;
+        --vp-button-alt-text: #47caff;
+        --vp-button-alt-bg: transparent;
+        --vp-button-alt-hover-border: #47caff;
+        --vp-button-alt-hover-text: #ffffff;
+        --vp-button-alt-hover-bg: #47caff;
+        --vp-button-alt-active-border: #47caff;
+  }
+
+  .VPHome .clip {
+    background: -webkit-linear-gradient(
+        315deg,
+        rgb(210, 86, 53) 10%,
+        #647eff 50%,
+        rgb(238, 224, 112) 90%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      background-size: 400% 400%;
+      animation: gradient 5s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
   }
   
   @property --anix {
@@ -65,10 +110,10 @@
 /* 定义放大缩小动画 */
 @keyframes zoomInOut {
     0% {
-      transform: scale(0.9); /* 初始状态和结束状态，元素大小不变 */
+      transform: scale(0.8); /* 初始状态和结束状态，元素大小不变 */
     }
     to {
-      transform: scale(1.1); /* 动画中间状态，元素放大到1.5倍 */
+      transform: scale(1); /* 动画中间状态，元素放大到1.5倍 */
     }
   }
   
@@ -230,6 +275,49 @@
   .dark ::-webkit-scrollbar-thumb:hover {
       background: #202020
   }
+
+.VPHomeFeatures .VPFeature {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden
+}
+
+.VPHomeFeatures .VPFeature:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: radial-gradient(var(--color), transparent, transparent);
+    left: var(--x);
+    top: var(--y);
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+    opacity: 0;
+    transition: opacity 1s
+}
+
+.VPHomeFeatures .VPFeature:hover:before {
+    opacity: 1;
+    transition: opacity .3s
+}
+
+.VPHomeFeatures .VPFeature:after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: rgba(245, 245, 245, 0.8);
+    z-index: 0;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    border-radius: 10px
+}
+
+.VPHomeFeatures .VPFeature>.box {
+    position: relative;
+    z-index: 1
+}
   
   .dark .VPHomeFeatures .VPFeature {
       position: relative;
