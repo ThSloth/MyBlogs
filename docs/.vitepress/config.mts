@@ -15,8 +15,8 @@ export default defineConfig({
     // 在这里添加你的 CSS 文件链接
     // ['link', { rel: 'stylesheet', href: './theme/style/iconfont-weapp-icon.css' }]
     ["link", { rel: "icon", href: "/yao.jpg" }],
-    ['script', { src: 'https://cpython666.github.io/js/clickjs/fireworks.js'}],
-    ['script', { src: 'https://cpython666.github.io/js/clickjs/anime.min.js'}]
+    ['script', { src: 'https://vxxvxxv.github.io/fireworks.js'}],
+    ['script', { src: 'https://vxxvxxv.github.io/anime.min.js'}],
   ],
   cleanUrls: true,
   themeConfig: {
@@ -26,7 +26,7 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
-    outline: { label: '目录导航' },
+    outline: { label: '目录导航',level: [0,4] },
     docFooter: { prev: '上一页', next: '下一页' },
     footer: {
       message: '本站收录内容源自互联网，不对其网站内容或交易负责。如有内容侵犯权益，请联系站长删除相关内容！',
@@ -35,23 +35,14 @@ export default defineConfig({
     nav: [
       { text: '爬虫工具库', 
         items: [
-          {text:"JSON格式化",link: '/spiderTools/JSONfomat/'},
-          { //分割线
-            items: [
-              {text:"API",link: '/api-examples'},
-            ]
-          }
+          {text:"爬虫工具库",link: 'https://spidertools.cn/'},
+          {text:"快速构建爬虫",link: 'https://curlconverter.com/'},
         ]
       },
       { text: 'Python', 
         items: [
           {text:"爬虫",link: '/python/spider/index'},
-          {text:"PyQt6",link: '/python/pyQt6/index'},
-          { //分割线
-            items: [
-              {text:"test",link: '/api-examples'},
-            ]
-          }
+          {text:"PyQt6",link: '/python/PyQt6/11'},
         ]
       },
       { text: '国学', 
@@ -60,14 +51,18 @@ export default defineConfig({
           {text:"大六壬",link: '/ChineseCulture/bigSix/index'},
           { //分割线
             items: [
-              {text:"test",link: '/api-examples'},
+              {text:"案例分析",link: '/ChineseCulture/case/index'},
             ]
           }
         ]
       },
       { text: '自媒体', 
         items: [
-          {text:"VitePress",link: '/selfMedia/vitepress/11'},
+          { //分割线
+            items: [
+              {text:"VitePress",link: '/selfMedia/vitepress/11'},
+            ]
+          },
           {text:"公众号",link: '/selfMedia/wechat/index'},
           {text:"小红书",link: '/selfMedia/redBook/index'},
           {text:"抖音",link: '/selfMedia/tiktok/index'},
@@ -87,7 +82,7 @@ export default defineConfig({
     sidebar: {
       '/selfMedia/vitepress/': [
         {
-          text: 'VitePress开始',
+          text: 'VitePress入门',
           collapsed: false,
           items: [
             { text: '本地搭建', link: '/selfMedia/vitepress/11' },
@@ -115,11 +110,25 @@ export default defineConfig({
           ]
         },
         {
-          text: '经验积累',
+          text: '经验学习',
           collapsed: false,
           items: [
             { text: '首页美化', link: '/selfMedia/vitepress/31' },
             { text: '文档美化', link: '/selfMedia/vitepress/32' }
+          ]
+        },
+      ],
+      '/python/PyQt6/': [
+        {
+          text: 'PyQt6入门',
+          collapsed: false,
+          items: [
+            { text: 'PyQt6安装与配置', link: '/python/PyQt6/11' },
+            { text: 'PyQt6基本控件学习', 
+              items: [
+                { text: 'PyQt6入门实例', link: '/python/PyQt6/121' },
+              ]
+            },
           ]
         },
       ]

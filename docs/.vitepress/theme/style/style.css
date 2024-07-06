@@ -114,6 +114,17 @@
       padding-right: 5px
   }
   
+  /* 右边侧边栏 */
+  .VPDocAside .outline-link.active{
+    color: #D939CD;
+    font-weight: bolder;
+  }
+
+  .VPDocAside .outline-link:hover{
+    color: #D939CD;
+    font-weight: bolder;
+  }
+
   
 /* 定义放大缩小动画 */
 @keyframes zoomInOut {
