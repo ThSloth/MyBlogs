@@ -5,7 +5,6 @@
 :::
 
 
-<i class="iconfont icon-weixin"></i>
+<i class="t-icon t-icon-weixin"></i>
 
 
-<span class="iconfont icon-weixin"></span>

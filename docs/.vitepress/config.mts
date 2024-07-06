@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress'
-import Icons from 'vite-plugin-icons';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -14,7 +13,10 @@ export default defineConfig({
   },
   head: [
     // 在这里添加你的 CSS 文件链接
-    ['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/c/font_4610072_werb8kqtkg.css' }]
+    // ['link', { rel: 'stylesheet', href: './theme/style/iconfont-weapp-icon.css' }]
+    ["link", { rel: "icon", href: "/yao.jpg" }],
+    ['script', { src: 'https://cpython666.github.io/js/clickjs/fireworks.js'}],
+    ['script', { src: 'https://cpython666.github.io/js/clickjs/anime.min.js'}]
   ],
   cleanUrls: true,
   themeConfig: {
@@ -117,7 +119,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '首页美化', link: '/selfMedia/vitepress/31' },
-            { text: 'GitHub部署', link: '/selfMedia/vitepress/12' }
+            { text: '文档美化', link: '/selfMedia/vitepress/32' }
           ]
         },
       ]

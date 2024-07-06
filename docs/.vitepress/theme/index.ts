@@ -1,6 +1,7 @@
 import m from "vitepress/theme";
 import { h } from "vue";
 import './style/style.css';
+import './style/iconfont-weapp-icon.css';
 
 import { defineComponent as d, h as t } from "vue";
 import { useData as y, defineClientComponent as n } from "vitepress";
