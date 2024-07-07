@@ -124,13 +124,31 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: 'PyQt6安装与配置', link: '/python/PyQt6/11' },
-            { text: 'PyQt6基本控件学习', 
-              items: [
-                { text: 'PyQt6入门实例', link: '/python/PyQt6/121' },
-              ]
-            },
+            { text: 'PyQt6入门实例', link: '/python/PyQt6/12' },
           ]
         },
+        {
+          text: 'PyQt6控件',
+          collapsed: false,
+          items: [
+            { text: 'PyQt6文本类控件', 
+              items: [
+                { text: 'QLabel标签', link: '/python/PyQt6/211' },
+                { text: 'QLineEdit单行文本框', link: '/python/PyQt6/212' },
+                { text: 'QTextEdit多行富文本框', link: '/python/PyQt6/213' },
+                { text: 'QPlainTextEdit纯文本', link: '/python/PyQt6/214' },
+                { text: 'QSpinBox整数，QDoubleSpinBox小数选择', link: '/python/PyQt6/215' },
+                { text: 'QLCDNumber液晶数字显示', link: '/python/PyQt6/216' },
+              ]
+            },
+            { text: 'PyQt6按钮类控件', 
+              items: [
+                { text: 'QPushButton按钮', link: '/python/PyQt6/221' },
+                { text: 'QToolButton工具按钮', link: '/python/PyQt6/222' },
+              ]
+            }
+          ]
+        }
       ]
     },
     
