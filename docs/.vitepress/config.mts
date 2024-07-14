@@ -128,10 +128,10 @@ export default defineConfig({
           ]
         },
         {
-          text: 'PyQt6控件',
-          collapsed: false,
+          text: 'PyQt6基本控件和使用',
+          collapsed: true,
           items: [
-            { text: 'PyQt6文本类控件', 
+            { text: '文本类控件', 
               items: [
                 { text: 'QLabel标签', link: '/python/PyQt6/211' },
                 { text: 'QLineEdit单行文本框', link: '/python/PyQt6/212' },
@@ -141,14 +141,76 @@ export default defineConfig({
                 { text: 'QLCDNumber液晶数字显示', link: '/python/PyQt6/216' },
               ]
             },
-            { text: 'PyQt6按钮类控件', 
+            { text: '按钮类控件', 
               items: [
                 { text: 'QPushButton按钮', link: '/python/PyQt6/221' },
                 { text: 'QToolButton工具按钮', link: '/python/PyQt6/222' },
+                { text: 'QRadioButton单选以及QCheckBox复选框', link: '/python/PyQt6/223' },
+              ]
+            },
+            { text: '选择列表类控件', 
+              items: [
+                { text: 'QComboBox下拉组合框', link: '/python/PyQt6/231' },
+                { text: 'QFontComboBox字体组合框', link: '/python/PyQt6/232' },
+                { text: 'QListWidget列表', link: '/python/PyQt6/233' },
+              ]
+            },
+            { text: '容器控件', 
+              items: [
+                { text: 'QGroupBox分组框', link: '/python/PyQt6/241' },
+                { text: 'QTabWidget选项卡', link: '/python/PyQt6/242' },
+                { text: 'QToolBox工具盒', link: '/python/PyQt6/243' },
+              ]
+            },
+            { text: '日期时间类控件', 
+              items: [
+                { text: 'QDateTimeEdit日期时间', link: '/python/PyQt6/251' },
+                { text: 'QCalendarWidget日历', link: '/python/PyQt6/252' },
+              ]
+            },
+            { text: '布局管理', 
+              items: [
+                { text: '垂直布局和水平布局', link: '/python/PyQt6/261' },
+                { text: '网格布局和表单布局', link: '/python/PyQt6/262' },
+                { text: '表单布局', link: '/python/PyQt6/263' },
+              ]
+            },
+            { text: '高级控件', 
+              items: [
+                { text: 'QMenuBar菜单栏', link: '/python/PyQt6/271' },
+                { text: '主窗体/工具栏/状态栏', link: '/python/PyQt6/272' },
+              ]
+            },
+            { text: '进度条类控件', 
+              items: [
+                { text: 'QProgressBar进度条', link: '/python/PyQt6/281' },
+              ]
+            },
+            { text: '树类控件', 
+              items: [
+                { text: 'QTreeView树视图', link: '/python/PyQt6/291' },
+                { text: 'QTreeWidget树控件', link: '/python/PyQt6/292' },
+              ]
+            },
+            { text: '分割类控件', 
+              items: [
+                { text: '分割线/弹簧/滚动条', link: '/python/PyQt6/2101' },
+              ]
+            },
+            { text: '对话框类控件', 
+              items: [
+                { text: '对话框', link: '/python/PyQt6/2111' },
+                { text: '表格', link: '/python/PyQt6/2112' },
+              ]
+            },
+            { text: 'PyQt6高级应用', 
+              items: [
+                { text: '基类QObject类介绍以及应用', link: '/python/PyQt6/2121' },
+                { text: 'Pyinstaller打包', link: '/python/PyQt6/2122' },
               ]
             }
           ]
-        }
+        },
       ]
     },
     
