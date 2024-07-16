@@ -41,8 +41,9 @@ export default defineConfig({
       },
       { text: 'Python', 
         items: [
-          {text:"爬虫",link: '/python/spider/index'},
+          {text:"爬虫",link: '/python/spider/11'},
           {text:"PyQt6",link: '/python/PyQt6/11'},
+          {text:"SQLite数据库",link: '/python/SQLite/11'},
         ]
       },
       { text: '国学', 
@@ -211,7 +212,34 @@ export default defineConfig({
             }
           ]
         },
-      ]
+        {
+          text: 'PyQt6案例应用',
+          collapsed: false,
+          items: [
+            { text: '公用模块', 
+              items: [
+                { text: '登陆', link: '/python/PyQt6/311' },
+              ]
+            },
+            { text: '国学', 
+              items: [
+                { text: '六爻', link: '/python/PyQt6/321' },
+                { text: '大六壬', link: '/python/PyQt6/322' },
+              ]
+            }
+          ]
+        },
+      ],
+      '/python/SQLite/': [
+        {
+          text: 'SQLite数据库',
+          collapsed: false,
+          items: [
+            { text: '入门', link: '/python/SQLite/11' },
+
+          ]
+        },
+      ],
     },
     
 
