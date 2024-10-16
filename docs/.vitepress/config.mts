@@ -42,7 +42,7 @@ export default defineConfig({
       { text: 'Python', 
         items: [
           {text:"爬虫",link: '/python/spider/11'},
-          {text:"PyQt6",link: '/python/PyQt6/11'},
+          {text:"PySide6",link: '/python/PySide6/11'},
           {text:"SQLite数据库",link: '/python/SQLite/11'},
         ]
       },
@@ -50,6 +50,7 @@ export default defineConfig({
         items: [
           {text:"六爻",link: '/ChineseCulture/hexagram/index'},
           {text:"大六壬",link: '/ChineseCulture/bigSix/index'},
+          {text:"八字",link: '/ChineseCulture/eightWords/101'},
           { //分割线
             items: [
               {text:"案例分析",link: '/ChineseCulture/case/index'},
@@ -119,112 +120,113 @@ export default defineConfig({
           ]
         },
       ],
-      '/python/PyQt6/': [
+      '/python/PySide6/': [
         {
-          text: 'PyQt6入门',
+          text: '入门',
           collapsed: false,
           items: [
-            { text: 'PyQt6安装与配置', link: '/python/PyQt6/11' },
-            { text: 'PyQt6入门实例', link: '/python/PyQt6/12' },
+            { text: '安装与配置', link: '/python/PySide6/11' },
+            { text: '入门实例', link: '/python/PySide6/12' },
           ]
         },
         {
-          text: 'PyQt6基本控件和使用',
+          text: '基本控件和使用',
           collapsed: true,
           items: [
             { text: '文本类控件', 
               items: [
-                { text: 'QLabel标签', link: '/python/PyQt6/211' },
-                { text: 'QLineEdit单行文本框', link: '/python/PyQt6/212' },
-                { text: 'QTextEdit多行富文本框', link: '/python/PyQt6/213' },
-                { text: 'QPlainTextEdit纯文本', link: '/python/PyQt6/214' },
-                { text: 'QSpinBox整数，QDoubleSpinBox小数选择', link: '/python/PyQt6/215' },
-                { text: 'QLCDNumber液晶数字显示', link: '/python/PyQt6/216' },
+                { text: 'QLabel标签', link: '/python/PySide6/211' },
+                { text: 'QLineEdit单行文本框', link: '/python/PySide6/212' },
+                { text: 'QTextEdit多行富文本框', link: '/python/PySide6/213' },
+                { text: 'QPlainTextEdit纯文本', link: '/python/PySide6/214' },
+                { text: 'QSpinBox整数，QDoubleSpinBox小数选择', link: '/python/PySide6/215' },
+                { text: 'QLCDNumber液晶数字显示', link: '/python/PySide6/216' },
               ]
             },
             { text: '按钮类控件', 
               items: [
-                { text: 'QPushButton按钮', link: '/python/PyQt6/221' },
-                { text: 'QToolButton工具按钮', link: '/python/PyQt6/222' },
-                { text: 'QRadioButton单选以及QCheckBox复选框', link: '/python/PyQt6/223' },
+                { text: 'QPushButton按钮', link: '/python/PySide6/221' },
+                { text: 'QToolButton工具按钮', link: '/python/PySide6/222' },
+                { text: 'QRadioButton单选以及QCheckBox复选框', link: '/python/PySide6/223' },
               ]
             },
             { text: '选择列表类控件', 
               items: [
-                { text: 'QComboBox下拉组合框', link: '/python/PyQt6/231' },
-                { text: 'QFontComboBox字体组合框', link: '/python/PyQt6/232' },
-                { text: 'QListWidget列表', link: '/python/PyQt6/233' },
+                { text: 'QComboBox下拉组合框', link: '/python/PySide6/231' },
+                { text: 'QFontComboBox字体组合框', link: '/python/PySide6/232' },
+                { text: 'QListWidget列表', link: '/python/PySide6/233' },
               ]
             },
             { text: '容器控件', 
               items: [
-                { text: 'QGroupBox分组框', link: '/python/PyQt6/241' },
-                { text: 'QTabWidget选项卡', link: '/python/PyQt6/242' },
-                { text: 'QToolBox工具盒', link: '/python/PyQt6/243' },
+                { text: 'QGroupBox分组框', link: '/python/PySide6/241' },
+                { text: 'QTabWidget选项卡', link: '/python/PySide6/242' },
+                { text: 'QToolBox工具盒', link: '/python/PySide6/243' },
               ]
             },
             { text: '日期时间类控件', 
               items: [
-                { text: 'QDateTimeEdit日期时间', link: '/python/PyQt6/251' },
-                { text: 'QCalendarWidget日历', link: '/python/PyQt6/252' },
+                { text: 'QDateTimeEdit日期时间', link: '/python/PySide6/251' },
+                { text: 'QCalendarWidget日历', link: '/python/PySide6/252' },
               ]
             },
             { text: '布局管理', 
               items: [
-                { text: '垂直布局和水平布局', link: '/python/PyQt6/261' },
-                { text: '网格布局和表单布局', link: '/python/PyQt6/262' },
-                { text: '表单布局', link: '/python/PyQt6/263' },
+                { text: '垂直布局和水平布局', link: '/python/PySide6/261' },
+                { text: '网格布局和表单布局', link: '/python/PySide6/262' },
+                { text: '表单布局', link: '/python/PySide6/263' },
               ]
             },
             { text: '高级控件', 
               items: [
-                { text: 'QMenuBar菜单栏', link: '/python/PyQt6/271' },
-                { text: '主窗体/工具栏/状态栏', link: '/python/PyQt6/272' },
+                { text: 'QMenuBar菜单栏', link: '/python/PySide6/271' },
+                { text: '主窗体/工具栏/状态栏', link: '/python/PySide6/272' },
               ]
             },
             { text: '进度条类控件', 
               items: [
-                { text: 'QProgressBar进度条', link: '/python/PyQt6/281' },
+                { text: 'QProgressBar进度条', link: '/python/PySide6/281' },
               ]
             },
             { text: '树类控件', 
               items: [
-                { text: 'QTreeView树视图', link: '/python/PyQt6/291' },
-                { text: 'QTreeWidget树控件', link: '/python/PyQt6/292' },
+                { text: 'QTreeView树视图', link: '/python/PySide6/291' },
+                { text: 'QTreeWidget树控件', link: '/python/PySide6/292' },
               ]
             },
             { text: '分割类控件', 
               items: [
-                { text: '分割线/弹簧/滚动条', link: '/python/PyQt6/2101' },
+                { text: '分割线/弹簧/滚动条', link: '/python/PySide6/2101' },
               ]
             },
             { text: '对话框类控件', 
               items: [
-                { text: '对话框', link: '/python/PyQt6/2111' },
-                { text: '表格', link: '/python/PyQt6/2112' },
+                { text: '对话框', link: '/python/PySide6/2111' },
+                { text: '表格', link: '/python/PySide6/2112' },
               ]
             },
-            { text: 'PyQt6高级应用', 
+            { text: '高级应用', 
               items: [
-                { text: '基类QObject类介绍以及应用', link: '/python/PyQt6/2121' },
-                { text: 'Pyinstaller打包', link: '/python/PyQt6/2122' },
+                { text: '基类QObject类介绍以及应用', link: '/python/PySide6/2121' },
+                { text: 'Pyinstaller打包', link: '/python/PySide6/2122' },
               ]
             }
           ]
         },
         {
-          text: 'PyQt6案例应用',
+          text: '案例应用',
           collapsed: false,
           items: [
             { text: '公用模块', 
               items: [
-                { text: '登陆', link: '/python/PyQt6/311' },
+                { text: '登陆', link: '/python/PySide6/311' },
               ]
             },
             { text: '国学', 
               items: [
-                { text: '六爻', link: '/python/PyQt6/321' },
-                { text: '大六壬', link: '/python/PyQt6/322' },
+                { text: '六爻', link: '/python/PySide6/321' },
+                { text: '大六壬', link: '/python/PySide6/322' },
+                { text: '八字', link: '/python/PySide6/323' },
               ]
             }
           ]
@@ -237,6 +239,23 @@ export default defineConfig({
           items: [
             { text: '入门', link: '/python/SQLite/11' },
 
+          ]
+        },
+      ],
+      '/ChineseCulture/eightWords/': [
+        {
+          text: '基础',
+          collapsed: false,
+          items: [
+            { text: '五行', link: '/ChineseCulture/eightWords/101' },
+            { text: '天干', link: '/ChineseCulture/eightWords/102' },
+          ]
+        },
+        {
+          text: '国学古籍',
+          collapsed: false,
+          items: [
+            { text: '《子平真诠》译文', link: '/ChineseCulture/eightWords/201' },
           ]
         },
       ],
