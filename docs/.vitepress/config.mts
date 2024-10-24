@@ -249,6 +249,11 @@ export default defineConfig({
           items: [
             { text: '五行', link: '/ChineseCulture/eightWords/101' },
             { text: '天干', link: '/ChineseCulture/eightWords/102' },
+            { text: '地支', link: '/ChineseCulture/eightWords/103' },
+            { text: '十二长生', link: '/ChineseCulture/eightWords/104' },
+            { text: '十二地支藏干', link: '/ChineseCulture/eightWords/105' },
+            { text: '五行四季旺衰', link: '/ChineseCulture/eightWords/106' },
+            { text: '十神生克', link: '/ChineseCulture/eightWords/107' },
           ]
         },
         {
