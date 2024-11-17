@@ -71,6 +71,12 @@ export default defineConfig({
           {text:"bilibili",link: '/selfMedia/bilibili/index'},
         ]
       },
+      { text: 'K线交易', 
+        items: [
+          {text:"缠论",link: '/trade/wind/index'},
+          {text:"裸K",link: '/trade/nakedK/index'},
+        ]
+      },
       { text: '碎碎念', 
         items: [
           {text:"我是谁？",link: '/gossip/me/index'},
@@ -256,6 +262,15 @@ export default defineConfig({
             { text: '十神生克', link: '/ChineseCulture/eightWords/107' },
             { text: '天干地支作用关系', link: '/ChineseCulture/eightWords/108' },
             { text: '五行反生反克亢剩反侮', link: '/ChineseCulture/eightWords/109' },
+            { text: '八字旺衰强弱', link: '/ChineseCulture/eightWords/110' },
+            { text: '八字五行强弱', link: '/ChineseCulture/eightWords/111' },
+            { text: '八字取用神', link: '/ChineseCulture/eightWords/112' },
+            { text: '八字取用神之木', link: '/ChineseCulture/eightWords/113' },
+            { text: '八字取用神之火', link: '/ChineseCulture/eightWords/114' },
+            { text: '八字取用神之土', link: '/ChineseCulture/eightWords/115' },
+            { text: '八字取用神之金', link: '/ChineseCulture/eightWords/116' },
+            { text: '八字取用神之水', link: '/ChineseCulture/eightWords/117' },
+            { text: '断八字步骤', link: '/ChineseCulture/eightWords/118' },
           ]
         },
         {
