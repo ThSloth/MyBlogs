@@ -254,6 +254,8 @@ export default defineConfig({
             { text: '十二地支藏干', link: '/ChineseCulture/eightWords/105' },
             { text: '五行四季旺衰', link: '/ChineseCulture/eightWords/106' },
             { text: '十神生克', link: '/ChineseCulture/eightWords/107' },
+            { text: '天干地支作用关系', link: '/ChineseCulture/eightWords/108' },
+            { text: '五行反生反克亢剩反侮', link: '/ChineseCulture/eightWords/109' },
           ]
         },
         {
